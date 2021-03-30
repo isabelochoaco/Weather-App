@@ -31,9 +31,16 @@ h2 {
 .weather-details {
   margin-top: 20px;
 }
+.week-forecast {
+  margin: auto;
+  padding: 40px;
+}
+
 .img-forecastNow {
   width: 50px;
+  height: 60px;
 }
+
 h3 {
   font-size: 20px;
   color: orange;
@@ -92,6 +99,7 @@ h2 {
 .img-forecastNow-sm {
   width: 150px;
 }
+
 h3 {
   font-size: 20px;
   color: orange;
