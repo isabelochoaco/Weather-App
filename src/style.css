@@ -5,7 +5,7 @@
   display: block;
   margin: 0 auto;
 }
-.card-body {
+.weather-app {
   background-color: white;
   border-radius: 30px;
   border: 8px solid steelblue;
@@ -31,8 +31,8 @@ h2 {
 .weather-details {
   margin-top: 20px;
 }
-.img-forecastNow-sm {
-  width: 200px;
+.img-forecastNow {
+  width: 50px;
 }
 h3 {
   font-size: 20px;
