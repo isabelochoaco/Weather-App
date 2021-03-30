@@ -12,6 +12,7 @@
   max-width: 500px;
   margin: 0 auto;
 }
+
 .search-city {
   margin: 0 auto;
 }
@@ -93,9 +94,6 @@ h2 {
   color: #424242;
 }
 
-.weather-details {
-  margin-top: 20px;
-}
 .img-forecastNow-sm {
   width: 150px;
 }
@@ -128,6 +126,7 @@ button {
 }
 
 .week-forecast {
+  padding: 20px;
   text-align: center;
   justify-content: center;
 }
