@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/app.js"/>
+   
+    <title>Weather App</title>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="weather-app">
+      <form class="search-form" id="search-form">
+      <div class="row">
+        <div class="col-md-7">
+        <input
+            type="search"
+            placeholder="Type a city.."
+            autofocus="on"
+            autocomplete="off"
+            id="city-input"
+            class="form-control shadow-sm"
+          />
+          <div class="col-md-3">
+          <input type="submit" value="Search" class="form-control btn btn-primary shadow-sm" />
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-success" id="current-location-button">Current</button>
+          </div>
+        </div>
+</form>
+     
+      <div class="row weather-details">
+<div class="col-md-6">
+        <h1 id="city"></h1>
+        <h2 id="date"></h2>
+         <h3 id ="description"></h3>
+  <div class="col-md-6"></div>
+        <img src="src/images/animated/day.svg" class="img-forecastNow-sm" alt>
+      </img> 
+      </div>
+      <div class="col-md-6">
+        <span class="temperature" id="temperature"></span>
+        <span class="units">
+            <a href="#" id="celsius-link">°C</a> |
+          <a href="#" id="fahrenheit-link">°F</a>
+          </span>
+        <ul>
+          <li>
+          Humidity: <span id="humidity"></span>%
+          </li>
+          <li>
+          Wind: <span id="wind"></span> km/h
+          </li>
+        </ul>
+        </div>
+       </div>
+
+        <div class="row week-forecast">
+          <div class="col-md-2 col-sm-6 text-center">
+            <p>Fri</p>
+            <img src="src/images/animated/rainy-1.svg" class="img-forecast-sm" alt>
+            <p>14° 
+              <span class="p-soft"> | 4°</span>
+            </p>
+          </div>
+          <div class="col-md-2 col-sm-6 text-center"> 
+            <p>Sat</p>
+            <img src="src/images/animated/rainy-4.svg" class="img-forecast-sm" alt>
+            <p>9° 
+              <span class="p-soft"> | -1°</span>
+            </p>
+          </div>
+          <div class="col-md-2 col-sm-6 text-center">
+<p>Sun</p>
+<img src="src/images/animated/cloudy-day-1.svg" class="img-forecast-sm" alt>
+            <p>12° 
+              <span class="p-soft"> | 5°</span>
+            </p>
+          </div>
+          <div class="col-md-2 col-sm-6 text-center">
+<p>Mon</p>
+<img src="src/images/animated/day.svg" class="img-forecast-sm" alt>
+            <p>17° 
+              <span class="p-soft"> | 9°</span>
+            </p>
+          </div>
+          <div class="col-md-2 col-sm-6 text-center">
+<p>Tue</p>
+<img src="src/images/animated/thunder.svg" class="img-forecast-sm" alt>
+            <p>16° 
+              <span class="p-soft"> | 7°</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
